@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #814a02 0%, #723b01 100%);
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-container {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-container input,
+.search-container .suggestions {
+    width: 100%;
+}
+
+.search-container .suggestions {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.has-suggestions {
+    border-top: 1px solid #ccc;
+}
+
+ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+#fruit-image {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    max-width: 100%; /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+    
